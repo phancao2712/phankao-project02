@@ -11,6 +11,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+:root {
+  --primary-color: #ffb900;
+}
+
 /* Common */
 .content {
   margin-left: 13.5rem;
@@ -19,12 +23,12 @@ body {
 
 .btn {
   display: inline-block;
-  min-width: 118px;
+  min-width: 11.8rem;
   font-weight: 600;
   background-color: #171100;
   text-align: center;
   color: #ffffff;
-  border-radius: 25px;
+  border-radius: 2.5rem;
   text-decoration: none;
 }
 
@@ -34,13 +38,13 @@ body {
 
 .fixed {
   position: sticky;
-  top: -36px;
+  top: -3.6rem;
   z-index: 1;
 }
 
 /* header */
 .header {
-  padding: 4.4rem 0 8px;
+  padding: 4.4rem 0 0.8rem;
   background-color: #fffcf4;
 }
 
@@ -62,7 +66,7 @@ body {
 }
 
 .header .item {
-  padding: 10px 21px;
+  padding: 1rem 2.1rem;
   font-weight: 400;
   color: #5f5b53;
   text-decoration: none;
@@ -71,9 +75,103 @@ body {
 .header .item:hover {
   font-weight: 600;
   color: #171100;
-  border-bottom: 2px solid #171100;
+  border-bottom: 0.2rem solid #171100;
 }
 
 .header .action .btn {
-  padding: 11px 41px;
+  padding: 1.1rem 4.1rem;
+}
+
+/* Hero */
+.hero {
+  background-color: #fffcf4;
+  padding-bottom: 6.5rem;
+}
+
+.hero .body {
+  padding-top: 5.6rem;
+  display: flex;
+}
+
+.hero .body .img-hero {
+  width: 47rem;
+  height: 68.5rem;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.hero .body .info {
+  padding: 12.8rem 13.5rem 0 23rem;
+}
+
+.hero .body .info .sub-title {
+  font-family: "Sen";
+  font-weight: 700;
+  font-size: 5.8rem;
+  line-height: 6.8rem;
+  letter-spacing: -0.02em;
+  color: #171100;
+  min-width: 47rem;
+}
+
+.hero .body .info .desc {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  min-width: 47rem;
+  color: #5f5b53;
+  margin-top: 2.2rem;
+}
+
+.hero .body .info .btn {
+  padding: 1.7rem 3.3rem;
+  background-color: var(--primary-color);
+}
+
+.hero .body .info .action {
+  display: flex;
+  margin-top: 3.8rem;
+  align-items: center;
+}
+
+.hero .body .action .img-play {
+  padding: 1.4rem;
+  margin-left: 2.8rem;
+  margin-right: 1.4rem;
+  background: #ffffff;
+  box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.07);
+  border-radius: 50%;
+}
+
+.hero .body .action .watch {
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #171100;
+  text-decoration: none;
+}
+
+.hero .stat .num {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.4rem;
+  color: #171100;
+  margin-right: 1rem;
+}
+
+.hero .stat {
+  display: flex;
+  margin-top: 0.8rem;
+}
+
+.hero .stat .item {
+  margin-right: 2.8rem;
+}
+
+.hero .stat-desc {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #5f5b53;
+  margin-top: 4.8rem;
 }
