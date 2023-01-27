@@ -16,9 +16,19 @@ body {
 }
 
 /* Common */
+a {
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+}
+
 .content {
-  margin-left: 13.5rem;
-  margin-right: 13.5rem;
+  width: 117rem;
+  max-width: calc(100% - 27rem);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn {
@@ -29,7 +39,14 @@ body {
   text-align: center;
   color: #ffffff;
   border-radius: 2.5rem;
-  text-decoration: none;
+  /* line-height: 5rem; */
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .btn:hover {
@@ -69,7 +86,6 @@ body {
   padding: 1rem 2.1rem;
   font-weight: 400;
   color: #5f5b53;
-  text-decoration: none;
 }
 
 .header .item:hover {
@@ -79,7 +95,7 @@ body {
 }
 
 .header .action .btn {
-  padding: 1.1rem 4.1rem;
+  padding: 1.7rem 4.1rem;
 }
 
 /* Hero */
@@ -88,53 +104,60 @@ body {
   padding-bottom: 6.5rem;
 }
 
-.hero .body {
+.hero .row {
   padding-top: 5.6rem;
   display: flex;
 }
 
-.hero .body .img-hero {
+.hero .row .img-hero {
   width: 47rem;
   height: 68.5rem;
   object-fit: cover;
   border-radius: 2rem;
 }
 
-.hero .body .info {
-  padding: 12.8rem 13.5rem 0 23rem;
+.hero .row .img-body,
+.hero .row .info {
+  width: 50%;
 }
 
-.hero .body .info .sub-title {
+.hero .row .info {
+  margin-top: 12.8rem;
+  margin-left: 23rem;
+}
+
+.hero .row .info .sub-title {
   font-family: "Sen";
   font-weight: 700;
   font-size: 5.8rem;
   line-height: 6.8rem;
   letter-spacing: -0.02em;
   color: #171100;
-  min-width: 47rem;
+  /* min-width: 47rem; */
 }
 
-.hero .body .info .desc {
+.hero .row .info .desc {
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 3rem;
-  min-width: 47rem;
+  /* min-width: 47rem; */
   color: #5f5b53;
   margin-top: 2.2rem;
 }
 
-.hero .body .info .btn {
+.hero .row .info .btn {
   padding: 1.7rem 3.3rem;
   background-color: var(--primary-color);
+  width: 18rem;
 }
 
-.hero .body .info .action {
+.hero .row .info .action {
   display: flex;
   margin-top: 3.8rem;
   align-items: center;
 }
 
-.hero .body .action .img-play {
+.hero .row .action .img-play {
   padding: 1.4rem;
   margin-left: 2.8rem;
   margin-right: 1.4rem;
@@ -143,11 +166,10 @@ body {
   border-radius: 50%;
 }
 
-.hero .body .action .watch {
+.hero .row .action .watch {
   font-weight: 600;
   font-size: 1.8rem;
   color: #171100;
-  text-decoration: none;
 }
 
 .hero .stat .num {
