@@ -16,6 +16,16 @@ body {
 }
 
 /* Common */
+.lv1 {
+  font-weight: 700;
+  font-size: 3.8rem;
+}
+
+.lv2 {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
 a {
   text-decoration: none;
 }
@@ -39,7 +49,6 @@ a {
   text-align: center;
   color: #ffffff;
   border-radius: 2.5rem;
-  /* line-height: 5rem; */
 }
 
 .line-clamp {
@@ -146,8 +155,6 @@ a {
 }
 
 .hero .course .name-course {
-  font-weight: 600;
-  font-size: 1.8rem;
   color: #171100;
 }
 
@@ -236,4 +243,50 @@ a {
   line-height: 1.5;
   color: #5f5b53;
   margin-top: 4.8rem;
+}
+
+/* Popular */
+
+.popular {
+  padding: 6.5rem 0;
+  margin-top: 13.5rem;
+}
+
+.popular-top {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular-top .sub-title {
+  font-family: "sen";
+  letter-spacing: -0.02em;
+  color: #171100;
+  margin-bottom: 1.6rem;
+}
+
+.popular-top .info {
+  max-width: 45.8rem;
+}
+
+.popular-top .desc {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: #5f5b53;
+}
+
+.popular .popular-btn {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  margin-left: 1.3rem;
+  line-height: 4rem;
+}
+
+.popular .popular-btn:hover {
+  color: #fff;
+  background-color: var(--primary-color);
 }
