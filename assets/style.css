@@ -24,7 +24,7 @@ a {
   display: flex;
 }
 
-.content {
+.main-content {
   width: 117rem;
   max-width: calc(100% - 27rem);
   margin-left: auto;
