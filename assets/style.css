@@ -12,7 +12,7 @@ body {
 }
 
 :root {
-  --primary-color: #ffb900;
+  --yellow-: #ffb900;
 }
 
 /* Common */
@@ -194,7 +194,7 @@ a {
 
 .hero .row .info .btn {
   padding: 1.7rem 3.3rem;
-  background-color: var(--primary-color);
+  background-color: var(--yellow-);
   width: 18rem;
 }
 
@@ -279,14 +279,14 @@ a {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--yellow-);
   background-color: transparent;
-  color: var(--primary-color);
+  color: var(--yellow-);
   margin-left: 1.3rem;
   line-height: 4rem;
 }
 
 .popular .popular-btn:hover {
   color: #fff;
-  background-color: var(--primary-color);
+  background-color: var(--yellow-);
 }
